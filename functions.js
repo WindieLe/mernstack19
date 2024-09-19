@@ -81,3 +81,53 @@ console.log(objD)
 
 var result = A(5)(5)(5)(5)
 console.log(result)
+
+//Example
+console.log("Example")
+//1.Name function
+function name(){
+    console.log("Windie")
+}
+name()
+
+//2.Funtion Expression
+var expressFunction = function (a,b){
+    return a+b
+}
+console.log(expressFunction(2,3))
+
+//3.IIFE
+// (function iife(empId, name){
+//     console.log(empId, name);
+// })(1, "Windie");
+
+
+//4.Constructor Function
+function employee(empId, name, address){
+    this.empId=empId,
+    this.name=name,
+    this.address=address;
+
+    this.getUserDetails = function(){
+        console.log("User Information Entered is -", this.empId, this.name, this.address)
+    }
+}
+
+var employeeObject = new employee(1,"Windie","123 Tacoma")
+console.log(employeeObject.getUserDetails)
+
+//5.Nested functions
+function A(a){
+    return function B(b){
+        return function C(c){
+            return function D(d){
+                return a+b+c+d
+            }
+        }
+    }
+}
+var objA= A("Hi ")
+var objB= objA("guys! ")
+var objC= objB("My name is: ")
+var objD= objC("Windie")
+console.log(objD)
