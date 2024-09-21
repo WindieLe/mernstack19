@@ -19,7 +19,7 @@
 // function Sum(a,b,c){
 //     console.log("Sum of a,b,c", a+b+c)
 // }
-// Sum(1,2,3)
+Sum(1,2,3)
 
 var Sum = function (a,b,c, d) {
     console.log("Sum of a, b and c, d", a+b+c+d)
