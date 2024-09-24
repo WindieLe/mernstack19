@@ -31,3 +31,5 @@ function GetProductDtails(callBackFunc, data) {
 }
 
 GetProductDtails(PrintDetails, productObj)
+
+
