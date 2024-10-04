@@ -46,10 +46,10 @@ function doaddition(a, b, c){
     c = c || 0;
     return a+b+c;
 }
-console.log("add(2, 3, 4):", doaddition(2, 3, 4));               // Output: 9
-console.log("add(2):", doaddition(2));                            // Output: 2 (2 + 0 + 0)
-console.log("add(2.3, 3):", doaddition(2.3, 3));                  // Output: 5.3
-console.log('add("first", 2, "three"):', doaddition("first", 2, "three")); // Output: first2three
+console.log("add(2, 3, 4):", doaddition(2, 3, 4));               
+console.log("add(2):", doaddition(2));                            
+console.log("add(2.3, 3):", doaddition(2.3, 3));                  
+console.log('add("first", 2, "three"):', doaddition("first", 2, "three")); 
 
 //Q5. Give me an example of your choice for each of the below concepts
 // a. closure, 
@@ -60,7 +60,7 @@ function outerFunction(outerVariable) {
     };
 }
 
-const newFunction = outerFunction("I am from the outer scope");
+var newFunction = outerFunction("I am from the outer scope");
 newFunction("I am from the inner scope");
 // b. hoisting, 
 console.log(hoistedVar); 
@@ -88,6 +88,7 @@ console.log(person2.getFullName());
 
 
 //Q6. What is the purpose of call, apply and bind ? and why they are used ? whats the difference between bind and apply ?
+
 //call: Executes a function with a specific this context and comma-separated arguments.
 //apply: Executes a function with a specific this context and arguments as an array.
 //bind: Returns a new function with a specific this context and optionally initial arguments, but doesn't execute it immediately.
